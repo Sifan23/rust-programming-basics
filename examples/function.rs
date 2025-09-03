@@ -13,7 +13,7 @@ fn mul (x: u32, y: u32) -> u32 {
     x * y
 }
 
-fn div (x: u32, y: u32) -> u32 {
+fn div (x: f64, y: f64) -> f64  {
     x / y
 }
 
@@ -24,6 +24,6 @@ fn main () {
         println!("The sum of {} and {} is {}", x, y, z);
     let z = mul(x,y);
         println!("The multiplication of {} and {} is {}", x,y,z);
-    let z = div(x,y);
+    let z = div(x.into(),y.into());
         println!("The division of {} and {} is {}", x,y,z);
 }
