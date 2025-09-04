@@ -5,9 +5,13 @@ pub fn eq() {
     println!("{x} == {y} is {z}");
 }
 
-// pub fn add() {
-//     todo!();
-// }
+pub fn add() {
+ let x: f32 = 1.0;
+ let y: f32 = 2.0;
+ let z:f32 = 3.0;
+ let sum = x + y + z;
+ println!("{x} + {y} + {z} = {sum}");
+}
 
 // pub fn cast(x: u8, y: i8, z: f32) -> f32 {
 //     x + y + z
@@ -15,4 +19,5 @@ pub fn eq() {
 
 pub fn main() {
     eq();
+    add();
 }
