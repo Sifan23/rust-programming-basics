@@ -13,11 +13,15 @@ pub fn add() {
  println!("{x} + {y} + {z} = {sum}");
 }
 
-// pub fn cast(x: u8, y: i8, z: f32) -> f32 {
-//     x + y + z
-// }
+pub fn cast(x: u8, y: i8, z: f32) -> f32 {
+    let x = x as f32;
+    let y = y as f32;       
+    println!("{} + {} + {} = {}", x, y, z, x + y + z);
+    x + y + z
+}
 
 pub fn main() {
     eq();
     add();
+    cast(1, -1, 1.0);
 }
